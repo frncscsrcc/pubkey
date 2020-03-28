@@ -1,0 +1,1 @@
+../k8s.io/code-generator/generate-groups.sh all orcaoperator/pkg/clients orcaoperator/pkg/apis "sirocco.cloud:v1alpha1"

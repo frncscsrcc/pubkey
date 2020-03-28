@@ -1,0 +1,29 @@
+# Task CR Definition
+---
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: pubkeys.sirocco.cloud
+spec:
+  group: sirocco.cloud
+  version: v1alpha1
+  scope: Namespaced
+  names:
+    kind: Pubkey
+    shortNames:
+      - pk
+    plural: pubkeys
+    singular: pubkey
+  additionalPrinterColumns:
+    - name: address
+      type: string
+      description: E-mail address associated to the key
+      JSONPath: .spec.address
+    - name: keytype
+      type: string
+      description: Key type
+      JSONPath: .spec.keytype
+    - name: active
+      type: boolean
+      description: Is active
+      JSONPath: .spec.active

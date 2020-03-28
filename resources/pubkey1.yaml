@@ -1,0 +1,11 @@
+# TaskType
+---
+apiVersion: sirocco.cloud/v1alpha1
+kind: Pubkey
+metadata:
+  name: pubkey1
+spec:
+  address: frncscsrcc@gmail.com
+  active: true
+  keytype: pgp
+  key: "ABCD"
