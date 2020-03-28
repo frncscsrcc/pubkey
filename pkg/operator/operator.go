@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/kubernetes"
-    "k8s.io/client-go/tools/cache"
+	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/workqueue"
 	pubkeyV1alpha1 "pubkey/pkg/clients/clientset/versioned"
